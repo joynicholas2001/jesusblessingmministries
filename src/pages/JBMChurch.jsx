@@ -56,15 +56,6 @@ export default function JBMChurch() {
   return (
     <section id='jbm-church' className='jbm-church-section'>
       <div className='container'>
-        {/* Hero Section */}
-        <div className='church-hero'>
-          <h1>Welcome to Jesus Blessing Ministries</h1>
-          <p className='church-subtitle'>A place where faith grows, love abounds, and lives are transformed</p>
-          <div className='church-hero-cta'>
-            <a className='btn-primary' href='#contact'>Visit Us</a>
-            <a className='btn-secondary' href='#ministries'>Our Ministries</a>
-          </div>
-        </div>
 
         {/* Enhanced About Section */}
         <div id='about' className='about-section-enhanced'>
@@ -228,6 +219,44 @@ export default function JBMChurch() {
           <div className='cta-buttons'>
             <a className='btn-primary' href='#contact'>Get in Touch</a>
             <a className='btn-secondary' href='#gallery'>See Our Community</a>
+          </div>
+        </div>
+
+        {/* Donation Section */}
+        <div className='donation-section'>
+          <h2>Support Our Ministry</h2>
+          <p>For all your donations, you may support them by sending them to the ministries bank account details given below:</p>
+          
+          <div className='bank-details-card'>
+            <div className='bank-header'>
+              <h3>🏦 Bank Account Details</h3>
+            </div>
+            <div className='bank-details'>
+              <div className='detail-row'>
+                <span className='detail-label'>Bank Name:</span>
+                <span className='detail-value'>HDFC</span>
+              </div>
+              <div className='detail-row'>
+                <span className='detail-label'>A/c No:</span>
+                <span className='detail-value'>23351530003723</span>
+              </div>
+              <div className='detail-row'>
+                <span className='detail-label'>IFSC:</span>
+                <span className='detail-value'>HDFC0002335</span>
+              </div>
+              <div className='detail-row'>
+                <span className='detail-label'>SWIFT:</span>
+                <span className='detail-value'>HDFCINBB</span>
+              </div>
+              <div className='detail-row'>
+                <span className='detail-label'>Branch Address:</span>
+                <span className='detail-value'>HDFC, Repalle, AP, India</span>
+              </div>
+            </div>
+            <div className='donation-message'>
+              <p>💝 Your generous contributions help us continue spreading God's love and serving our community.</p>
+              <p className='verse'>"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." - 2 Corinthians 9:7</p>
+            </div>
           </div>
         </div>
       </div>
