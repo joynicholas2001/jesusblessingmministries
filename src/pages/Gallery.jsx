@@ -111,7 +111,7 @@ export default function Gallery() {
                   <div className='contact-icon'>📍</div>
                   <div>
                     <h4>Address</h4>
-                    <p>JBM church, 24th ward Nethaji Nagar Repalle - 522265</p>
+                    <p>JESUS BLESSING MINISTRIES Church, 24th ward Nethaji Nagar Repalle - 522265</p>
                   </div>
                 </div>
                 
@@ -143,7 +143,7 @@ export default function Gallery() {
                 
                 <div className='form-group'>
                   <label htmlFor='phone'>Phone Number</label>
-                  <input type='tel' id='phone' name='phone' placeholder='(555) 123-4567' required />
+                  <input type='tel' id='phone' name='phone' placeholder='+91 XXXXXXXXXX' required />
                 </div>
                 
                 <div className='form-group'>

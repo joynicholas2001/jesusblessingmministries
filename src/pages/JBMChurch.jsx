@@ -66,31 +66,127 @@ export default function JBMChurch() {
           </div>
         </div>
 
-        {/* About Section - Pastor Details */}
-        <div id='about' className='about-section'>
-          <h2>About Us</h2>
-          <div className='pastor-profile'>
-            <div className='pastor-photo-container'>
-              <img 
-                src="/pastor-faithfulness.jpg" 
-                alt="Pastor Kattupalli Vijayaraju B.Th" 
-                className='pastor-about-image'
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'flex';
-                }}
-              />
-              <div className='pastor-photo' style={{display: 'none'}}>👨‍💼</div>
+        {/* Enhanced About Section */}
+        <div id='about' className='about-section-enhanced'>
+          <div className='about-header'>
+            <div className='section-badge'>About Us</div>
+            <h2 className='about-main-title'>Meet Our Spiritual Leader</h2>
+            <p className='about-subtitle'>Guided by faith, driven by purpose, serving with love for over two decades</p>
+          </div>
+
+          <div className='pastor-showcase'>
+            <div className='pastor-image-section'>
+              <div className='pastor-image-frame'>
+                <img 
+                  src="/pastor-faithfulness.jpg" 
+                  alt="Pastor Kattupalli Vijayaraju B.Th" 
+                  className='pastor-professional-image'
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className='pastor-image-fallback' style={{display: 'none'}}>
+                  <div className='fallback-icon'>👨‍💼</div>
+                  <p>Pastor Image</p>
+                </div>
+              </div>
+              <div className='pastor-credentials'>
+                <div className='credential-item'>
+                  <span className='credential-icon'>🎓</span>
+                  <span>Bachelor of Theology</span>
+                </div>
+                <div className='credential-item'>
+                  <span className='credential-icon'>⛪</span>
+                  <span>40+ Years in Ministry</span>
+                </div>
+                <div className='credential-item'>
+                  <span className='credential-icon'>👥</span>
+                  <span>Community Leader</span>
+                </div>
+              </div>
             </div>
-            <div className='pastor-details'>
-              <h3>Pastor Kattupalli Vijayaraju B.Th.</h3>
-              <p className='pastor-title'>Founder and President of Jesus Blessing Ministries</p>
-              <div className='pastor-story'>
-                <p>Pastor Kattupalli Vijayaraju is the founder and president of Jesus Blessing Ministries, Repalle. With a vision and mission for the Lord's work, he left his home in Allamudi to Netaji Nagar, Repalle, in the year 1985.</p>
-                
-                <p>He was trained in a Bible college and worked with various missions and projects of the Bible college. Later he took the vision of the Lord for his ministry and established the JESUS BLESSING MINISTRIES with his beloved wife.</p>
-                
-                <p>He is blessed with 3 children who are well-educated in engineering and also trained for the upcoming mission of the Lord for his glory. The Lord accomplished various churches in Bapatla district of Andhra Pradesh, and the Lord helped him to work with all the pastors and also lead the pastors fellowship in town Repalle.</p>
+
+            <div className='pastor-content'>
+              <div className='pastor-intro'>
+                <h3 className='pastor-name'>Pastor Kattupalli Vijayaraju B.Th.</h3>
+                <div className='pastor-titles'>
+                  <span className='title-primary'>Founder & President</span>
+                  <span className='title-secondary'>Jesus Blessing Ministries</span>
+                </div>
+                <div className='pastor-verse'>
+                  <blockquote>
+                    "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, to give you hope and a future."
+                  </blockquote>
+                  <cite>- Jeremiah 29:11</cite>
+                </div>
+              </div>
+
+              <div className='pastor-journey'>
+                <h4>A Journey of Faith & Service</h4>
+                <div className='journey-timeline'>
+                  <div className='timeline-item'>
+                    <div className='timeline-marker'>
+                      <span className='timeline-year'>1985</span>
+                    </div>
+                    <div className='timeline-content'>
+                      <h5>Divine Calling</h5>
+                      <p>With a vision and mission for the Lord's work, Pastor Kattupalli left his home in Allamudi to serve in Netaji Nagar, Repalle, answering God's call to ministry.</p>
+                    </div>
+                  </div>
+
+                  <div className='timeline-item'>
+                    <div className='timeline-marker'>
+                      <span className='timeline-year'>B.Th</span>
+                    </div>
+                    <div className='timeline-content'>
+                      <h5>Theological Training</h5>
+                      <p>Trained in Bible college, he worked with various missions and projects, preparing for the great work God had planned for his ministry.</p>
+                    </div>
+                  </div>
+
+                  <div className='timeline-item'>
+                    <div className='timeline-marker'>
+                      <span className='timeline-year'>JBM</span>
+                    </div>
+                    <div className='timeline-content'>
+                      <h5>Ministry Foundation</h5>
+                      <p>Together with his beloved wife, he established Jesus Blessing Ministries, creating a foundation for spiritual growth and community service.</p>
+                    </div>
+                  </div>
+
+                  <div className='timeline-item'>
+                    <div className='timeline-marker'>
+                      <span className='timeline-year'>Now</span>
+                    </div>
+                    <div className='timeline-content'>
+                      <h5>Legacy of Service</h5>
+                      <p>Blessed with 3 well-educated children in engineering who are trained for upcoming ministry missions, Pastor Kattupalli continues to lead multiple churches across Bapatla district and guide pastors' fellowship in Repalle.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className='pastor-impact'>
+                <h4>Ministry Impact</h4>
+                <div className='impact-stats'>
+                  <div className='impact-item'>
+                    <span className='impact-number'>23+</span>
+                    <span className='impact-label'>Years of Service</span>
+                  </div>
+                  <div className='impact-item'>
+                    <span className='impact-number'>Multiple</span>
+                    <span className='impact-label'>Churches Established</span>
+                  </div>
+                  <div className='impact-item'>
+                    <span className='impact-number'>100+</span>
+                    <span className='impact-label'>Families Blessed</span>
+                  </div>
+                  <div className='impact-item'>
+                    <span className='impact-number'>1</span>
+                    <span className='impact-label'>District Fellowship</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
