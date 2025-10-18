@@ -60,7 +60,7 @@ export default function Navbar(){
         </nav>
         
         {/* Mobile Menu Toggle Button */}
-        <button className='mobile-menu-toggle' onClick={toggleMobileMenu}>
+        <button className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
           <span></span>
           <span></span>
           <span></span>
@@ -70,8 +70,8 @@ export default function Navbar(){
       </div>
       
       {/* Mobile Navigation Overlay */}
-      <div className={`mobile-nav-overlay ${isMobileMenuOpen ? 'active' : ''}`}>
-        <div className='mobile-nav-content'>
+      <div className={`mobile-nav-overlay ${isMobileMenuOpen ? 'active' : ''}`} onClick={closeMobileMenu}>
+        <div className='mobile-nav-content' onClick={(e) => e.stopPropagation()}>
           <div className='mobile-nav-header'>
             <h3>Menu</h3>
             <button className='mobile-nav-close' onClick={closeMobileMenu}>
