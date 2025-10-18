@@ -18,11 +18,31 @@ export default function Home(){
       <section className='section god-leadership'>
         <div className='container'>
           <div className='leadership-content'>
-            <div className='leadership-text'>
+            <div className='leadership-header'>
               <h2>23 Years of God's Faithfulness</h2>
               <p className='leadership-verse'>
                 "I will give you peace" Leviticus 26:6
               </p>
+            </div>
+            <div className='leadership-image'>
+              <div className='pastor-faithfulness-image'>
+                <img 
+                  src="/pastor-faithfulness.jpg" 
+                  alt="Pastor Kattupalli Vijayaraju B.Th - 23 Years of Faithful Ministry" 
+                  className='pastor-rectangular-image'
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className='pastor-photo' style={{display: 'none'}}>🕊️</div>
+              </div>
+              <div className='pastor-name'>
+                <h3>Pastor K. Vijaya Raju B.Th</h3>
+                <p>Founder & Senior Pastor</p>
+              </div>
+            </div>
+            <div className='leadership-text'>
               <p className='leadership-description'>
                 For 23 blessed years, God has been faithfully leading our ministry with His boundless love and amazing grace. Through every season, every challenge, and every victory, His guiding hand has never left us. We have witnessed countless testimonies of His faithfulness, experienced His provision in times of need, and seen His love transform lives in our community.
               </p>
@@ -39,24 +59,6 @@ export default function Home(){
                   <div className='highlight-number'>✟</div>
                   <div className='highlight-label'>Lives Transformed</div>
                 </div>
-              </div>
-            </div>
-            <div className='leadership-image'>
-              <div className='pastor-faithfulness-image'>
-                <img 
-                  src="/pastor-faithfulness.jpg" 
-                  alt="Pastor Kattupalli Vijayaraju B.Th - 23 Years of Faithful Ministry" 
-                  className='pastor-circular-image'
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className='pastor-photo' style={{display: 'none'}}>🕊️</div>
-              </div>
-              <div className='pastor-name'>
-                <h3>Pastor K. Vijaya Raju B.Th</h3>
-                <p>Founder & Senior Pastor</p>
               </div>
             </div>
           </div>
