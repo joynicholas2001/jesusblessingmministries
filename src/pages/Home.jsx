@@ -90,19 +90,16 @@ export default function Home(){
           <h2>Service Times</h2>
           <div className='service-times-grid'>
             <div className='service-day'>
-              <h3>Sunday</h3>
+              <h3>Sunday Worship</h3>
+              <h4>Netaji Nagar, Repalle</h4>
               <div className='services-list'>
                 <div className='service-item'>
-                  <span className='service-time'>8:00 AM</span>
-                  <span className='service-name'>Early Morning Worship</span>
-                </div>
-                <div className='service-item'>
-                  <span className='service-time'>10:30 AM</span>
-                  <span className='service-name'>Main Worship Service</span>
+                  <span className='service-time'>10:00 AM</span>
+                  <span className='service-name'>Sunday Morning Worship</span>
                 </div>
                 <div className='service-item'>
                   <span className='service-time'>6:00 PM</span>
-                  <span className='service-name'>Evening Service</span>
+                  <span className='service-name'>Sunday Evening Service</span>
                 </div>
               </div>
             </div>

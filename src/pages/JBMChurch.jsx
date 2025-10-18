@@ -166,7 +166,7 @@ export default function JBMChurch() {
                     <span className='impact-label'>Years of Service</span>
                   </div>
                   <div className='impact-item'>
-                    <span className='impact-number'>Multiple</span>
+                    <span className='impact-number'>3</span>
                     <span className='impact-label'>Churches Established</span>
                   </div>
                   <div className='impact-item'>
