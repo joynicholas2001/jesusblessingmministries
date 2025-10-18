@@ -72,7 +72,7 @@ export default function JBMChurch() {
           <div className='pastor-profile'>
             <div className='pastor-photo-container'>
               <img 
-                src="/src/pastor-faithfulness.jpg.jpeg" 
+                src="/pastor-faithfulness.jpg" 
                 alt="Pastor Kattupalli Vijayaraju B.Th" 
                 className='pastor-about-image'
                 onError={(e) => {

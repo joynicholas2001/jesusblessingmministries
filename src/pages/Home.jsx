@@ -44,17 +44,15 @@ export default function Home(){
             <div className='leadership-image'>
               <div className='pastor-faithfulness-image'>
                 <img 
-                  src="/src/pastor-faithfulness.jpg.jpeg" 
-                  alt="Pastor Kattupalli Vijayaraju" 
+                  src="/pastor-faithfulness.jpg" 
+                  alt="Pastor Kattupalli Vijayaraju B.Th - 23 Years of Faithful Ministry" 
                   className='pastor-circular-image'
                   onError={(e) => {
                     e.target.style.display = 'none';
-                    e.target.nextSibling.style.background = 'linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%)';
-                    e.target.nextSibling.innerHTML = '<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white;"><div style="font-size: 4rem; margin-bottom: 15px;">🕊️</div><p style="margin: 0; font-size: 1.1rem; font-weight: 600;">23 Years of God\'s Faithfulness</p></div>';
+                    e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <div className='image-overlay'>
-                </div>
+                <div className='pastor-photo' style={{display: 'none'}}>🕊️</div>
               </div>
               <div className='pastor-name'>
                 <h3>Pastor K. Vijaya Raju B.Th</h3>
