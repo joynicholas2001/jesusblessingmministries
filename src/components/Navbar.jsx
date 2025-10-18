@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 export default function Navbar(){
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -9,7 +11,29 @@ export default function Navbar(){
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+    setIsMobileDropdownOpen(false);
   };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const toggleMobileDropdown = () => {
+    setIsMobileDropdownOpen(!isMobileDropdownOpen);
+  };
+
+  const ministryItems = [
+    { name: 'Ministries', href: '#ministries' },
+    { name: 'Orphanages', href: '#orphanages' },
+    { name: 'Church Plantation', href: '#church-plantation' },
+    { name: 'Street Ministry', href: '#street-ministry' },
+    { name: 'Medical Camps', href: '#medical-camps' },
+    { name: 'Bible College', href: '#bible-college' },
+    { name: 'Widows Home', href: '#widows-home' },
+    { name: 'Pastoral Services', href: '#pastoral-services' },
+    { name: 'Youth Ministry', href: '#youth-ministry' },
+    { name: 'Gospel Meetings', href: '#gospel-meetings' }
+  ];
 
   return (
     <header className='site-header'>
@@ -21,7 +45,16 @@ export default function Navbar(){
           <a href='#home'>Home</a>
           <a href='#jbm-church'>About</a>
           <a href='#jbm-church'>JBM Church</a>
-          <a href='#ministries'>Ministries</a>
+          <div className='dropdown' onMouseEnter={() => setIsDropdownOpen(true)} onMouseLeave={() => setIsDropdownOpen(false)}>
+            <a href='#ministries' className='dropdown-trigger'>
+              Ministries <span className='dropdown-arrow'>▼</span>
+            </a>
+            <div className={`dropdown-menu ${isDropdownOpen ? 'active' : ''}`}>
+              {ministryItems.map((item, index) => (
+                <a key={index} href={item.href} className='dropdown-item'>{item.name}</a>
+              ))}
+            </div>
+          </div>
           <a href='#gallery'>Gallery</a>
           <a href='#contact'>Contact</a>
         </nav>
@@ -49,7 +82,16 @@ export default function Navbar(){
             <a href='#home' onClick={closeMobileMenu}>Home</a>
             <a href='#jbm-church' onClick={closeMobileMenu}>About</a>
             <a href='#jbm-church' onClick={closeMobileMenu}>JBM Church</a>
-            <a href='#ministries' onClick={closeMobileMenu}>Ministries</a>
+            <div className='mobile-dropdown'>
+              <button className='mobile-dropdown-trigger' onClick={toggleMobileDropdown}>
+                Ministries <span className={`dropdown-arrow ${isMobileDropdownOpen ? 'rotated' : ''}`}>▼</span>
+              </button>
+              <div className={`mobile-dropdown-menu ${isMobileDropdownOpen ? 'active' : ''}`}>
+                {ministryItems.map((item, index) => (
+                  <a key={index} href={item.href} className='mobile-dropdown-item' onClick={closeMobileMenu}>{item.name}</a>
+                ))}
+              </div>
+            </div>
             <a href='#gallery' onClick={closeMobileMenu}>Gallery</a>
             <a href='#contact' onClick={closeMobileMenu}>Contact</a>
             <div className='mobile-nav-give'>
