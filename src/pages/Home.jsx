@@ -87,37 +87,52 @@ export default function Home(){
 
       <section id='service-times' className='section alt'>
         <div className='container'>
-          <h2>Service Times</h2>
+          <h2>Weekly Service Timings</h2>
           <div className='service-times-grid'>
             <div className='service-day'>
-              <h3>Sunday Worship</h3>
-              <h4>Netaji Nagar, Repalle</h4>
+              <h3>Netaji Nagar, Repalle</h3>
+              <div className='services-list'>
+                <div className='service-item'>
+                  <span className='service-time'>11:00 AM</span>
+                  <span className='service-name'>Sunday Morning Worship</span>
+                </div>
+                <div className='service-item'>
+                  <span className='service-time'>7:00 PM</span>
+                  <span className='service-name'>Every Saturday Fasting Prayer</span>
+                </div>
+                <div className='service-item'>
+                  <span className='service-time'>8:00 PM</span>
+                  <span className='service-name'>All Night Prayer Every Second Monday</span>
+                </div>
+              </div>
+            </div>
+            <div className='service-day'>
+              <h3>Aalamudi</h3>
+              <div className='services-list'>
+                <div className='service-item'>
+                  <span className='service-time'>7:00 AM</span>
+                  <span className='service-name'>Sunday Morning Worship</span>
+                </div>
+                <div className='service-item'>
+                  <span className='service-time'>8:00 PM</span>
+                  <span className='service-name'>All Night Prayer Every First Monday</span>
+                </div>
+              </div>
+            </div>  
+            <div className='service-day'>
+              <h3>Morlavaripallem</h3>
               <div className='services-list'>
                 <div className='service-item'>
                   <span className='service-time'>10:00 AM</span>
                   <span className='service-name'>Sunday Morning Worship</span>
                 </div>
                 <div className='service-item'>
-                  <span className='service-time'>6:00 PM</span>
-                  <span className='service-name'>Sunday Evening Service</span>
+                  <span className='service-time'>10:00 AM</span>
+                  <span className='service-name'>Every Friday Fasting Prayer</span>
                 </div>
-              </div>
-            </div>
-            <div className='service-day'>
-              <h3>Wednesday</h3>
-              <div className='services-list'>
                 <div className='service-item'>
-                  <span className='service-time'>7:00 PM</span>
-                  <span className='service-name'>Bible Study & Prayer</span>
-                </div>
-              </div>
-            </div>
-            <div className='service-day'>
-              <h3>Friday</h3>
-              <div className='services-list'>
-                <div className='service-item'>
-                  <span className='service-time'>7:30 PM</span>
-                  <span className='service-name'>Youth Fellowship</span>
+                  <span className='service-time'>8:00 PM</span>
+                  <span className='service-name'>All Night Prayer Every First Friday</span>
                 </div>
               </div>
             </div>
