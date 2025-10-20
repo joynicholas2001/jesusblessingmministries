@@ -775,14 +775,14 @@ table {
   font-style: italic;
   margin: 0 0 15px 0;
   opacity: 0.9;
-  color: white;
+  color: white !important;
 }
 
 .pastor-name {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0 0 8px 0;
-  color: white;
+  color: white !important;
 }
 
 .ministry-name {
@@ -796,7 +796,7 @@ table {
   font-size: 1rem;
   margin: 0;
   opacity: 0.8;
-  color: white;
+  color: white !important;
 }
 .church-hero{text-align:center; padding:80px 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; border-radius: 16px; margin-bottom: 60px}
 .church-hero h1{font-size:3.2rem; margin-bottom:20px; font-weight: 800}
