@@ -65,6 +65,165 @@ export default function Home(){
         </div>
       </section>
 
+      {/* Our Ministry Works Section */}
+      <section id='ministry-works' className='section ministry-works'>
+        <div className='container'>
+          <div className='ministry-works-header'>
+            <h2>Our Ministry Works</h2>
+            <p className='section-description'>
+              Through God's grace, we serve His people in various ways, touching lives and bringing hope to communities across Andhra Pradesh.
+            </p>
+          </div>
+
+          <div className='ministry-works-grid'>
+            {/* Women Empowerment */}
+            <div className='ministry-work-card'>
+              <div className='ministry-work-content'>
+                <div className='ministry-work-header'>
+                  <div className='ministry-icon'>👩‍💼</div>
+                  <h3>Women Empowerment</h3>
+                </div>
+                <p>
+                  We help women who don't have jobs and are struggling to survive. We give them free training to learn 
+                  tailoring so they can start their own business at home. We provide sewing machines and teach them how 
+                  to make all types of clothes. This helps them earn money and support their families.
+                </p>
+              </div>
+              <div className='ministry-images-container'>
+                <div className='ministry-images-scroll'>
+                  <div className='ministry-image-placeholder'>👗</div>
+                  <div className='ministry-image-placeholder'>🧵</div>
+                  <div className='ministry-image-placeholder'>✂️</div>
+                  <div className='ministry-image-placeholder'>👜</div>
+                  <div className='ministry-image-placeholder'>🪡</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Children's Homes */}
+            <div className='ministry-work-card'>
+              <div className='ministry-work-content'>
+                <div className='ministry-work-header'>
+                  <div className='ministry-icon'>🏠</div>
+                  <h3>Children's Homes</h3>
+                </div>
+                <p>
+                  Many children in India don't have basic things they need to live. J.B.M provides everything these 
+                  children need - a place to live, education, food, clothes, medical care, and support to continue 
+                  their studies. We started this children's home 15 years ago. By God's grace, we take care of all 
+                  their needs. These children need your support to continue having a good life.
+                </p>
+              </div>
+              <div className='ministry-images-container'>
+                <div className='ministry-images-scroll'>
+                  <div className='ministry-image-placeholder'>👶</div>
+                  <div className='ministry-image-placeholder'>📚</div>
+                  <div className='ministry-image-placeholder'>🍎</div>
+                  <div className='ministry-image-placeholder'>👕</div>
+                  <div className='ministry-image-placeholder'>🏥</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Help for Elderly and Needy People */}
+            <div className='ministry-work-card'>
+              <div className='ministry-work-content'>
+                <div className='ministry-work-header'>
+                  <div className='ministry-icon'>👴</div>
+                  <h3>Help for Elderly and Needy People</h3>
+                </div>
+                <p>
+                  In more than 20 villages in Bapatla district, Andhra Pradesh, many elderly and poor people live 
+                  without basic needs. J.B.M works hard to help them every season. We visit their villages or invite 
+                  them to our church to give them what they need. God gives us strength to reach them. Your kind heart 
+                  can help make their lives better and happier.
+                </p>
+                <p className='ministry-additional'>
+                  Many needy people also come to J.B.M ministry for help throughout the year. We are always ready to 
+                  support them in every way we can.
+                </p>
+              </div>
+              <div className='ministry-images-container'>
+                <div className='ministry-images-scroll'>
+                  <div className='ministry-image-placeholder'>🏘️</div>
+                  <div className='ministry-image-placeholder'>🍲</div>
+                  <div className='ministry-image-placeholder'>🧥</div>
+                  <div className='ministry-image-placeholder'>💊</div>
+                  <div className='ministry-image-placeholder'>❤️</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Services for Widows */}
+            <div className='ministry-work-card'>
+              <div className='ministry-work-content'>
+                <div className='ministry-work-header'>
+                  <div className='ministry-icon'>🤱</div>
+                  <h3>Services for Widows</h3>
+                </div>
+                <p>
+                  More than 5 million women in Andhra Pradesh are widows. They need basic things to survive in Indian 
+                  society. J.B.M works to help them by visiting their villages and understanding their needs.
+                </p>
+                <p className='ministry-additional'>
+                  Every season we provide what they need for daily life. Each year, J.B.M spends lakhs of Indian rupees 
+                  to make their lives better. We provide shelter, food, basic needs, and friendship.
+                </p>
+                <div className='scripture-quote-small'>
+                  <p>
+                    "I will be your God throughout your lifetime -- until your hair is white with age. I made you, 
+                    and I will care for you. I will carry you along and save you" - Isaiah 46:4
+                  </p>
+                </div>
+              </div>
+              <div className='ministry-images-container'>
+                <div className='ministry-images-scroll'>
+                  <div className='ministry-image-placeholder'>🏠</div>
+                  <div className='ministry-image-placeholder'>🍚</div>
+                  <div className='ministry-image-placeholder'>🤝</div>
+                  <div className='ministry-image-placeholder'>💝</div>
+                  <div className='ministry-image-placeholder'>🙏</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Honoring People with Disabilities */}
+            <div className='ministry-work-card'>
+              <div className='ministry-work-content'>
+                <div className='ministry-work-header'>
+                  <div className='ministry-icon'>♿</div>
+                  <h3>Honoring People with Disabilities</h3>
+                </div>
+                <p>
+                  Every season, J.B.M gives necessary things to people with disabilities. We survey every village in 
+                  our district to find them and help meet their needs.
+                </p>
+                <p className='ministry-additional'>
+                  Each year, J.B.M spends lakhs of Indian rupees by collecting donations from around the world to help 
+                  poor and needy people with disabilities. We provide wheelchairs, daily living aids, food, shelter, 
+                  clothes, and medical care when needed.
+                </p>
+                <div className='scripture-quote-small'>
+                  <p>
+                    "His disciples asked Him, 'Master, why was this man born blind?' Jesus answered, 'Neither. This 
+                    happened so God's power could be shown.'" - John 9:2-3
+                  </p>
+                </div>
+              </div>
+              <div className='ministry-images-container'>
+                <div className='ministry-images-scroll'>
+                  <div className='ministry-image-placeholder'>♿</div>
+                  <div className='ministry-image-placeholder'>🦽</div>
+                  <div className='ministry-image-placeholder'>🏥</div>
+                  <div className='ministry-image-placeholder'>🍞</div>
+                  <div className='ministry-image-placeholder'>✨</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Prayer Request & Ministry Support Section */}
       <section id='prayer-support' className='section prayer-support'>
         <div className='container'>
@@ -218,7 +377,7 @@ export default function Home(){
       <section id='featured-video' className='section featured-video'>
         <div className='container'>
           <div className='video-header'>
-            <h2>Watch Us and YouTube and be Blessed</h2>
+            <h2>Watch Us on YouTube and be Blessed</h2>
             <p className='video-description'>
               Experience the power of God's word through our inspiring messages and testimonies of faith.
             </p>

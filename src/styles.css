@@ -477,6 +477,149 @@ table {
 /* Church Specific Styles */
 .jbm-church-section{background: var(--bg-primary)}
 
+/* Ministry Works Section */
+.ministry-works {
+  background: var(--bg-secondary);
+  padding: 80px 0;
+  position: relative;
+}
+
+.ministry-works-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ministry-works-header h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.ministry-works-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ministry-work-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ministry-work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.ministry-work-content {
+  padding: 40px;
+}
+
+.ministry-work-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ministry-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.ministry-work-header h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ministry-work-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+.ministry-additional {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.scripture-quote-small {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.08) 0%, rgba(180, 83, 9, 0.08) 100%);
+  border-left: 4px solid var(--accent);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.scripture-quote-small p {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.ministry-images-container {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  padding: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.ministry-images-scroll {
+  display: flex;
+  gap: 20px;
+  animation: scroll-images 15s linear infinite;
+  width: max-content;
+}
+
+.ministry-image-placeholder {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.ministry-image-placeholder:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
+}
+
+@keyframes scroll-images {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause animation on hover */
+.ministry-images-container:hover .ministry-images-scroll {
+  animation-play-state: paused;
+}
+
 /* Prayer Request & Ministry Support Section */
 .prayer-support {
   background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
@@ -3037,9 +3180,63 @@ table {
     max-width: 100%;
   }
   
-  .hero, .leadership, .ministries, .service-times, .gallery-cta, .featured-video, .prayer-support {
+  .hero, .leadership, .ministries, .service-times, .gallery-cta, .featured-video, .prayer-support, .ministry-works {
     overflow-x: hidden;
     max-width: 100%;
+  }
+  
+  /* Ministry Works Section Mobile */
+  .ministry-works {
+    padding: 60px 0;
+  }
+  
+  .ministry-works-header h2 {
+    font-size: 2rem;
+  }
+  
+  .ministry-works-grid {
+    gap: 30px;
+    padding: 0 10px;
+  }
+  
+  .ministry-work-content {
+    padding: 25px 20px;
+  }
+  
+  .ministry-work-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .ministry-icon {
+    font-size: 2rem;
+  }
+  
+  .ministry-work-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .ministry-work-content p {
+    font-size: 1rem;
+  }
+  
+  .ministry-images-container {
+    padding: 20px 0;
+  }
+  
+  .ministry-image-placeholder {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .scripture-quote-small {
+    padding: 15px;
+  }
+  
+  .scripture-quote-small p {
+    font-size: 0.9rem;
   }
   
   /* Prayer Support Section Mobile */
@@ -3356,6 +3553,12 @@ table {
     max-width: 100%;
   }
   
+  /* Ministry Works Section Laptop */
+  .ministry-works-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
   .pastor-faithfulness-image {
     width: 360px;
     height: 360px;
@@ -3408,6 +3611,21 @@ table {
   
   .request-card {
     padding: 35px;
+  }
+  
+  /* Ministry Works Section Tablet */
+  .ministry-works {
+    padding: 70px 0;
+  }
+  
+  .ministry-works-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .ministry-work-header {
+    flex-direction: row;
+    text-align: left;
   }
   
   .hero-inner {
