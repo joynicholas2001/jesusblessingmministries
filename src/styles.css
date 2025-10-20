@@ -503,12 +503,6 @@ table {
   z-index: 2;
 }
 
-.prayer-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-}
-
 .prayer-support-header h2 {
   font-size: clamp(2.2rem, 4vw, 3.2rem);
   color: var(--primary);

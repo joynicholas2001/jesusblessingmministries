@@ -69,7 +69,6 @@ export default function Home(){
       <section id='prayer-support' className='section prayer-support'>
         <div className='container'>
           <div className='prayer-support-header'>
-            <div className='prayer-icon'>🌿</div>
             <h2>Prayer Request & Ministry Support</h2>
             <div className='greeting-banner'>
               <p className='praise-greeting'>
@@ -219,7 +218,7 @@ export default function Home(){
       <section id='featured-video' className='section featured-video'>
         <div className='container'>
           <div className='video-header'>
-            <h2>Watch Our Latest Message</h2>
+            <h2>Watch Us and YouTube and be Blessed</h2>
             <p className='video-description'>
               Experience the power of God's word through our inspiring messages and testimonies of faith.
             </p>
